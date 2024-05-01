@@ -56,13 +56,20 @@
     <h4>Contact Us</h4>
     <form id="contactForm">
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" placeholder="Enter your names here" required><br>g
+      <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+      <button class="clear-button"onclick="clearField('name')">Clear</button><br>
+      
       <label for="subject">Subject:</label><br>
-      <input type="text" id="subject" name="subject" placeholder="Topic of your message" required><br>
+      <input type="text" id="subject" name="subject" placeholder="Topic of your message" required>
+      <button class="clear-button"onclick="clearField('subject')">Clear</button><br>
+      
       <label for="message">Message:</label><br>
-      <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+      <button class="clear-button3"onclick="clearField('message')">Clear</button><br><br>
+      
       <input type="submit" value="Send">
     </form>
+    
 
     <div>
       <h3>About Us</h3>

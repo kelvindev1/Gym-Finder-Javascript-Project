@@ -75,3 +75,9 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     alert('Email client opened with pre-filled message. Hit OK to Proceed.');
     window.location.href = mailtoLink;
 });
+// clear buttons
+
+  function clearField(id) {
+    document.getElementById(id).value = '';
+    alert('Do you want to clear!');
+}
