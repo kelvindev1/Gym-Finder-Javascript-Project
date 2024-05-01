@@ -1,0 +1,77 @@
+{
+    "options":[
+       {"id": "1",
+       "name": "FALFALA",
+       "location":"Komarock",
+       "description":"women only gym members",
+       "price":"3000",
+       "image":"https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "category":"women only",
+       "email":"FALFALA@gmail.com"
+
+},
+{
+       "id": "2",
+       "name": "KYUMAL",
+       "location":"SOUTH B",
+       "description":"ALL GENDER GYM",
+       "price":"4000",
+       "image":"https://images.pexels.com/photos/19801353/pexels-photo-19801353/free-photo-of-close-up-of-rows-of-dumbbells-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "category":"all genders",
+       "email":"kyumal@gmail.com"
+},
+{
+       "id": "3",
+       "name": "WALASHA",
+       "location":"EMBAKASI",
+       "description":"Fantanstic  all genders gym membership",
+       "price":"2500",
+       "image":"https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "category":"all genders",
+       "email":"WALasha@gmail.com"
+},
+{
+       "id": "4",
+       "name": "WAVES",
+       "location":"EASTLEIGH",
+       "description":"women only gym members",
+       "price":"5000",
+       "image":"https://images.pexels.com/photos/1886487/pexels-photo-1886487.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "category":"women only",
+       "email":"WAVES@gmail.com"
+},
+{
+       "id": "5",
+       "name": "RAMBO",
+       "location":"UMOJA",
+       "description":"Fantanstic  all genders gym membership",
+       "price":"3000",
+       "image":"https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "category":"all genders",
+       "email":"Rambo@gmail.com"
+},
+{
+       "id": "6",
+       "name": "QUAKE",
+       "location":"KILIMANI",
+       "description":"Fantanstic  all genders gym membership",
+       "price":"10000",
+       "image":"https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600",
+       "category":"all genders",
+       "email":"QUAKERS@gmail.com"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+]
+
+}
