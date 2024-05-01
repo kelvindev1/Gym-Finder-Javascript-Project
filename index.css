@@ -48,10 +48,56 @@ footer {
 }
 
 #contactForm input[type="submit"]:hover {
-    background-color: #3e8e41;
+    background-color: #219221;
 }
 
 .copyright {
     padding: 15px;
     font-size: 14px;
+}
+
+/*button styles*/
+/*button3 special style*/
+.clear-button3 {
+    position: relative;
+    left: 0px; /* adjust this value to move the button to the right */
+    top: -30px; /* adjust this value to move the button up */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #030303;
+    background-color:  #580701; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+ .clear-button3:hover {
+
+    background-color: #720e01;
+    transition: 1.5s;
+ }
+
+.clear-button{
+    background-color: #580701; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #030303;
+  
+}
+
+.clear-button:hover {
+    background-color: #720e01;
 }
