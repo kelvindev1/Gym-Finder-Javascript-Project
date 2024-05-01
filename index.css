@@ -5,3 +5,49 @@
     font-weight: bold;
     color: #000000;
 }
+
+footer {
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s ease-in-out;
+    color: #fff;
+    padding: 10px;
+}
+
+
+#contactForm label {
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#contactForm input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 3s ease-in-out;
+}
+
+#contactForm input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.copyright {
+    padding: 15px;
+    font-size: 14px;
+}
