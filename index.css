@@ -8,6 +8,12 @@ nav {
     justify-content: space-between;
     padding: 1rem;
   }
+  .link ul {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+  }
 
 .links li{
     display: inline-block;
@@ -37,6 +43,23 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #000000;
+}
+#mainUl li{
+list-style-type: none;
+
+    margin-right: 75px;
+    padding: 5px;
+    
+    overflow: hidden;
+    border: solid 1px gray;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    position: relative;
 }
 
 footer {
