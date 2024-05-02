@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    background-color: bisque;
+}
+
+
 nav {
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
@@ -7,11 +17,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    
   }
   .link ul {
      display: flex;
      align-items: center;
      justify-content: space-between;
+     list-style: none;
  
   }
 
@@ -19,6 +31,8 @@ nav {
     display: inline-block;
     text-align:center ;
     padding: 0.5rem 1rem;
+    align-items: center;
+    justify-content: center;
 
 }
 .links a {
@@ -29,12 +43,13 @@ nav {
     display: block;
     padding: 0.5rem 1rem;
     transition: var(--transition);
+    
   }
   .links a:hover {
     background: burlywood;
     color: var(--clr-primary-5);
     padding-left: 1.5rem;
-    color: gray;
+    color: rgb(96, 189, 250);
   }
 
 #introDiv {
@@ -43,6 +58,7 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #000000;
+    text-shadow: 3px 3px 5px black;
 }
 #mainUl li{
 list-style-type: none;
