@@ -1,6 +1,35 @@
-nav.navbarnavbar-expand-lgbg-body-tertiary {
-    text-align: center;
+nav {
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+.links li{
+    display: inline-block;
+    text-align:center ;
+    padding: 0.5rem 1rem;
+
 }
+.links a {
+    color: var(--clr-grey-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  }
+  .links a:hover {
+    background: burlywood;
+    color: var(--clr-primary-5);
+    padding-left: 1.5rem;
+    color: gray;
+  }
 
 #introDiv {
     text-align: center;
