@@ -10,53 +10,57 @@
 </head>
 
 <body>
-  <header>
-  
-  <nav>
-    <div class="nav-header">
-    <ul class="links">
-      <li>
-        <a href="index.html">home</a>
-      </li>
-      <li>
-        <a href="about.html">about</a>
-      </li>
-      <li>
-        <a href="projects.html">projects</a>
-      </li>
-      <li>
-        <a href="contact.html">contact</a>
-      </li>
-    </ul>
-    </div>
-    </nav>
-  
+  <main class="content">
+    <header>
+      <div id="introDiv">
+        <h1>Equinox Fitness Gym</h1>
+      </div>
 
-  <div id="introDiv">
-    <h1>Equinox Fitness Gym</h1>
-  </div>
-  </header>
+      <nav>
+        <div class="nav-header">
+          <ul class="links">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+            <li>
+              <a href="projects.html">fitness</a>
+            </li>
+            <li>
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr>
+      </nav>
 
-  <ul id="mainUl"> </ul>
+
+
+    </header>
+
+    <ul id="mainUl"> </ul>
+  </main>
 
   <footer>
     <h4>Contact Us</h4>
     <form id="contactForm">
       <label for="name">Name:</label><br>
       <input type="text" id="name" name="name" placeholder="Enter your name here" required>
-      <button class="clear-button"onclick="clearField('name')">Clear</button><br>
-      
+      <button class="clear-button" onclick="clearField('name')">Clear</button><br>
+
       <label for="subject">Subject:</label><br>
       <input type="text" id="subject" name="subject" placeholder="Topic of your message" required>
-      <button class="clear-button"onclick="clearField('subject')">Clear</button><br>
-      
+      <button class="clear-button" onclick="clearField('subject')">Clear</button><br>
+
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-      <button class="clear-button3"onclick="clearField('message')">Clear</button><br><br>
-      
+      <button class="clear-button3" onclick="clearField('message')">Clear</button><br><br>
+
       <input type="submit" value="Send">
     </form>
-    
+
 
     <div>
       <h3>About Us</h3>
