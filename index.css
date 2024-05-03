@@ -154,4 +154,37 @@ button.add-button {
   button.remove-button:hover {
     background-color: #d32f2f; 
   }
-  
+  #gymForm {
+    max-width: 350px;
+    padding: 20px;
+    background-color: green;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#gymForm input[type="text"],
+input[type="number"],
+input[type="url"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#gymForm input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="url"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#gymForm button {
+    padding: 7px;
+    border-radius: 4px;
+}
+
+#gymForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -161,6 +161,15 @@
       "price": "10000",
       "image": "https://i.pinimg.com/564x/39/a0/e9/39a0e9bec752ab23ca49e5650a133735.jpg",
       "category": "All"
+    },
+    {
+      "id": "7f24",
+      "name": "BOXING",
+      "location": "RIRUTA",
+      "description": "Both male and female",
+      "price": "4500",
+      "image": "https://www.gbboxing.org.uk/2024/04/19/four-females-set-to-compete-in-todays-semi-final-bouts-following-victories-on-day-three-at-world-boxing-cup-in-colorado/",
+      "category": "all"
     }
   ]
 }

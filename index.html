@@ -30,6 +30,31 @@
   </header>
 
   <ul id="mainUl"> </ul>
+  <h4>Fill the form to Add a New Gym</h4>
+  <form id="gymForm">
+    <label for="name"></label>
+    <input type="text" id="name" placeholder="Enter Gym Name"><br>
+
+    <label for="location"></label>
+    <input type="text" id="location" placeholder="Enter Gym Location" required><br>
+
+    <label for="description"></label>
+    <input type="text" id="description" placeholder="Brief Description" required><br>
+
+    <label for="price"></label>
+    <input type="number" id="price" placeholder=" @ Kshs" required><br>
+
+    <label for="image"></label>
+    <input type="url" id="image" placeholder="Enter the image URl" required><br>
+
+    <label for="category"></label>
+    <input type="text" id="category" placeholder="Specify Gender" required><br>
+
+    <button type="submit">Add Gym</button>
+  </form>
+
+  <div id="outputOnDOM"></div>
+
 
   <footer>
 
