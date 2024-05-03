@@ -43,8 +43,35 @@ fetch("http://localhost:3000/options")
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
 
-      deleteButton.addEventListener("click", () => {
-        li.remove();
+      deleteButton.dataset.itemId = option.id;
+
+      deleteButton.addEventListener("click", async () => {
+        try {
+          // Get the item ID from the dataset property
+          const itemId = deleteButton.dataset.itemId;
+
+          // Make the DELETE request to the server with the item ID
+          const response = await fetch(`http://localhost:3000/options/${itemId}`, {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json"
+            }
+          });
+
+          if (response.ok) {
+            // If the request was successful, remove the corresponding li element from the DOM
+            li.remove();
+
+            // Display a success message
+            console.log(`Item with ID ${itemId} deleted successfully`);
+          } else {
+            // If the request was not successful, display an error message
+            console.error("Error deleting item");
+          }
+        } catch (error) {
+          // If there was a network error, display an error message
+          console.error("Network error:", error);
+        }
       });
 
       const addToFavoritesButton = document.createElement("button");
