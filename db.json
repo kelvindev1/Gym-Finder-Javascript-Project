@@ -1,22 +1,5 @@
 {
-  "options": [{
-      "id": "1",
-      "name": "FALFALA",
-      "location": "KOMAROCK",
-      "description": "Male gym members Only !",
-      "price": "3000",
-      "image": "https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "category": "M"
-    },
-    {
-      "id": "2",
-      "name": "KYUMAL",
-      "location": "SOUTH B",
-      "description": "ALL GENDER GYM !",
-      "price": "4000",
-      "image": "https://images.pexels.com/photos/19801353/pexels-photo-19801353/free-photo-of-close-up-of-rows-of-dumbbells-at-the-gym.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "category": "All"
-    },
+  "options": [
     {
       "id": "3",
       "name": "WALASHA",
@@ -62,7 +45,6 @@
       "image": "https://i.pinimg.com/564x/c7/d3/d5/c7d3d501e4b32e360d5705d10963fc63.jpg",
       "category": "All"
     },
-
     {
       "id": "8",
       "name": "ECCENTRIC",
@@ -180,21 +162,5 @@
       "image": "https://i.pinimg.com/564x/39/a0/e9/39a0e9bec752ab23ca49e5650a133735.jpg",
       "category": "All"
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   ]
 }

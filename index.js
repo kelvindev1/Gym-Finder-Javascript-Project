@@ -34,19 +34,62 @@ fetch("http://localhost:3000/options")
       const descriptionParagraph = document.createElement("p");
       descriptionParagraph.textContent = option.description;
 
-      const deleteButton = document.createElement("button");
-      deleteButton.textContent = "Delete";
+      // Define cartItems array to store items in the cart
+      let cartItems = [];
 
-      deleteButton.addEventListener("click", () => {
-        li.remove();
+      // Create "Add to cart" button
+      const addButton = document.createElement("button");
+      addButton.textContent = "Add";
+      addButton.classList.add("add-button");
+      addButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        addToCart(option);
+        addButton.textContent = "Added";
+        addButton.disabled = true; // Disable add button after adding to cart
+        removeButton.disabled = false; // Enable remove button after adding to cart
       });
+
+      // Create "Remove from cart" button
+      const removeButton = document.createElement("button");
+      removeButton.textContent = "Remove";
+      removeButton.classList.add("remove-button");
+      removeButton.disabled = true; // Initially disabled until item is added to cart
+      removeButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        removeFromCart(option.name);
+        addButton.textContent = "Add";
+        addButton.disabled = false; // Enable add button after removing from cart
+        removeButton.disabled = true; // Disable remove button after removing from cart
+      });
+
+      // Function to add an item to the cart
+      function addToCart(option) {
+        cartItems.push(option);
+        console.log('Item added to cart:', option.name);
+        console.log('Cart items:', cartItems);
+      }
+
+      // Function to remove an item from the cart
+      function removeFromCart(optionName) {
+        const index = cartItems.findIndex((item) => item.name === optionName);
+        if (index !== -1) {
+          cartItems.splice(index, 1);
+          console.log('Item removed from cart:', optionName);
+          console.log('Cart items:', cartItems);
+          alert(`Item ${optionName} removed from cart`);
+        } else {
+          console.log('Item not found in cart:', optionName);
+          alert(`Item ${optionName} not found in cart`);
+        }
+      }
 
       mainDiv.appendChild(nameHeading);
       mainDiv.appendChild(locationHeading);
       mainDiv.appendChild(categoryParagraph);
       mainDiv.appendChild(priceParagraph);
       mainDiv.appendChild(descriptionParagraph);
-      mainDiv.appendChild(deleteButton);
+      mainDiv.appendChild(addButton);
+      mainDiv.appendChild(removeButton);
 
       li.appendChild(imgAnchor);
       li.appendChild(mainDiv);
@@ -70,6 +113,7 @@ document
 
     //Create email content
     let emailContent = "Am " + name + "\n" + "My message : " + message;
+
 
     // Create mailto link
     let mailtoLink =
