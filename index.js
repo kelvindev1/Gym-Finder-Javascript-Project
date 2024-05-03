@@ -12,7 +12,7 @@ fetch("http://localhost:3000/options")
       const img = document.createElement("img");
       img.id = "Gym-image";
       img.src = option.image;
-      img.width = 260;
+      img.width = 300;
       img.height = 180;
 
       imgAnchor.appendChild(img);
@@ -34,11 +34,19 @@ fetch("http://localhost:3000/options")
       const descriptionParagraph = document.createElement("p");
       descriptionParagraph.textContent = option.description;
 
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+
+      deleteButton.addEventListener("click", () => {
+        li.remove();
+      });
+
       mainDiv.appendChild(nameHeading);
       mainDiv.appendChild(locationHeading);
       mainDiv.appendChild(categoryParagraph);
       mainDiv.appendChild(priceParagraph);
       mainDiv.appendChild(descriptionParagraph);
+      mainDiv.appendChild(deleteButton);
 
       li.appendChild(imgAnchor);
       li.appendChild(mainDiv);
