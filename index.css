@@ -34,17 +34,20 @@
     color: #000000;
 }
 
+#mainUl {
+    display: block;
+    margin-top: 8px;
+}
+
 #mainUl li {
     list-style-type: none;
 
     margin-right: 75px;
     margin-left: 75px;
-    padding: 10px;
-
+    padding: 5px;
     align-items: center;
     justify-content: center;
     display: inline-block;
-    position: relative;
 }
 
 footer {
