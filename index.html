@@ -10,10 +10,26 @@
 </head>
 
 <body>
+  <header>
+
+    <nav class="nav-header">
+      <ul class="links">
+        <li>
+          <a href="./Links/About.html">about</a>
+        </li>
+        <li>
+          <a href="./Links/Contact.html">contact</a>
+        </li>
+      </ul>
+    </nav>
 
 
-    <ul id="mainUl"> </ul>
-  </main>
+    <div id="introDiv">
+      <h1>Equinox Fitness Gym</h1>
+    </div>
+  </header>
+
+  <ul id="mainUl"> </ul>
 
   <footer>
 
@@ -21,6 +37,15 @@
     <form id="contactForm">
       <label for="name"></label><br>
       <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+
+      <label for="subject"></label><br>
+      <input type="text" id="subject" name="subject" placeholder="Topic of your message" required>
+
+      <label for="message"></label><br>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br />
+      <button class="clear-button" onclick="clearField('message')">Clear</button><br>
+
+      <input type="submit" value="Send">
 
     </form>
 

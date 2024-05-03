@@ -1,6 +1,5 @@
 {
-  "options": [
-    {
+  "options": [{
       "id": "1",
       "name": "FALFALA",
       "location": "KOMAROCK",
@@ -101,86 +100,86 @@
       "category": "M"
     },
     {
-            "id": "12",
-            "name": "CROWNS",
-            "location": "NAKURU",
-            "description": "Female gym members",
-            "price": "10000",
-            "image": "https://i.pinimg.com/564x/df/78/b3/df78b32568a3cb19da1e0ce7b49bc036.jpg",
-            "category": "F"
-     },
-     {
-        "id": "13",
-        "name": "CRACKERS",
-        "location": "NAIVASHA",
-        "description": "Female gym members",
-        "price": "8000",
-        "image": "https://i.pinimg.com/736x/ad/87/2b/ad872bd6d7d9afdbb13a4c1aff2e94e1.jpg",
-        "category": "F"
- },
- {
-    "id": "14",
-    "name": "REHOBOTH",
-    "location": "ELDORET",
-    "description": "Fantanstic All genders gym membership",
-    "price": "9000",
-    "image": "https://i.pinimg.com/564x/92/55/4c/92554cb9bbfdbd6e3853e615819d349b.jpg",
-    "category": "All"
-},
-{
-    "id": "15",
-    "name": "GALAXY",
-    "location": "KISUMU",
-    "description": "ALL GENDER GYM !",
-    "price": "10000",
-    "image": "https://i.pinimg.com/564x/31/f1/61/31f161d661d6004d5b87c3a3268fe661.jpg",
-    "category": "All"
-},
-{
-    "id": "16",
-    "name": "RUBIES",
-    "location": "KAKAMEGA",
-    "description": "Fantanstic All genders gym membership !",
-    "price": "10000",
-    "image": "https://i.pinimg.com/564x/f9/5d/77/f95d776d2e2c84c972707dedf886cb96.jpg",
-    "category": "All"
-},
-{
-    "id": "17",
-    "name": "DIAMONDS",
-    "location": "WEBUYE",
-    "description": "Fantanstic All genders gym membership",
-    "price": "10000",
-    "image": "https://i.pinimg.com/564x/fe/fc/a5/fefca5e3f0648f711578f35a3c9e24d9.jpg",
-    "category": "All"
-},
- {
-    "id": "18",
-    "name": "QUAKERS",
-    "location": "KILELESHWA",
-    "description": "Female gym members",
-    "price": "10000",
-    "image": "https://i.pinimg.com/564x/d5/d7/a8/d5d7a86b74967ed7d582c2deb1b179f3.jpg",
-    "category": "F"
-},
-{
-    "id": "19",
-    "name": "EMERALDS",
-    "location": "MLOLONGO",
-    "description": "ALL GENDER GYM !",
-    "price": "10000",
-    "image": "https://i.pinimg.com/564x/b1/50/1e/b1501e7564f708a643906b7c7cde4c92.jpg",
-    "category": "All"
-},
-{
-    "id": "20",
-    "name": "MORANS",
-    "location": "KITALE",
-    "description": "Fantanstic All genders gym membership",
-    "price": "10000",
-    "image": "https://i.pinimg.com/564x/39/a0/e9/39a0e9bec752ab23ca49e5650a133735.jpg",
-    "category": "All"
-}
+      "id": "12",
+      "name": "CROWNS",
+      "location": "NAKURU",
+      "description": "Female gym members",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/df/78/b3/df78b32568a3cb19da1e0ce7b49bc036.jpg",
+      "category": "F"
+    },
+    {
+      "id": "13",
+      "name": "CRACKERS",
+      "location": "NAIVASHA",
+      "description": "Female gym members",
+      "price": "8000",
+      "image": "https://i.pinimg.com/736x/ad/87/2b/ad872bd6d7d9afdbb13a4c1aff2e94e1.jpg",
+      "category": "F"
+    },
+    {
+      "id": "14",
+      "name": "REHOBOTH",
+      "location": "ELDORET",
+      "description": "Fantanstic All genders gym membership",
+      "price": "9000",
+      "image": "https://i.pinimg.com/564x/92/55/4c/92554cb9bbfdbd6e3853e615819d349b.jpg",
+      "category": "All"
+    },
+    {
+      "id": "15",
+      "name": "GALAXY",
+      "location": "KISUMU",
+      "description": "ALL GENDER GYM !",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/31/f1/61/31f161d661d6004d5b87c3a3268fe661.jpg",
+      "category": "All"
+    },
+    {
+      "id": "16",
+      "name": "RUBIES",
+      "location": "KAKAMEGA",
+      "description": "Fantanstic All genders gym membership !",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/f9/5d/77/f95d776d2e2c84c972707dedf886cb96.jpg",
+      "category": "All"
+    },
+    {
+      "id": "17",
+      "name": "DIAMONDS",
+      "location": "WEBUYE",
+      "description": "Fantanstic All genders gym membership",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/fe/fc/a5/fefca5e3f0648f711578f35a3c9e24d9.jpg",
+      "category": "All"
+    },
+    {
+      "id": "18",
+      "name": "QUAKERS",
+      "location": "KILELESHWA",
+      "description": "Female gym members",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/d5/d7/a8/d5d7a86b74967ed7d582c2deb1b179f3.jpg",
+      "category": "F"
+    },
+    {
+      "id": "19",
+      "name": "EMERALDS",
+      "location": "MLOLONGO",
+      "description": "ALL GENDER GYM !",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/b1/50/1e/b1501e7564f708a643906b7c7cde4c92.jpg",
+      "category": "All"
+    },
+    {
+      "id": "20",
+      "name": "MORANS",
+      "location": "KITALE",
+      "description": "Fantanstic All genders gym membership",
+      "price": "10000",
+      "image": "https://i.pinimg.com/564x/39/a0/e9/39a0e9bec752ab23ca49e5650a133735.jpg",
+      "category": "All"
+    }
 
 
 
@@ -195,7 +194,7 @@
 
 
 
-    
+
 
   ]
 }
