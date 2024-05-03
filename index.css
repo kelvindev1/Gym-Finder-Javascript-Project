@@ -38,17 +38,12 @@
     list-style-type: none;
 
     margin-right: 75px;
-    padding: 5px;
+    margin-left: 75px;
+    padding: 10px;
 
-    overflow: hidden;
-    border: solid 1px gray;
-    border-radius: 50px;
     align-items: center;
     justify-content: center;
-    width: 520px;
     display: inline-block;
-    background-color: black;
-    color: white;
     position: relative;
 }
 
