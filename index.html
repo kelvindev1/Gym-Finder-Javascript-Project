@@ -22,12 +22,35 @@
         </li>
       </ul>
     </nav>
-
-
     <div id="introDiv">
       <h1>Equinox Fitness Gym</h1>
     </div>
   </header>
+
+  <h3>Add a New Gym</h3>
+  <form id="gymForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter Gym Name"><br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" placeholder="Enter Gym Location" required><br>
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" placeholder="Brief Description" required><br>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" placeholder=" @ Kshs" required><br>
+
+    <label for="image">Image URL:</label>
+    <input type="url" id="image" placeholder="Enter the image URl" required><br>
+
+    <label for="category">Gender:</label>
+    <input type="text" id="category" placeholder="Specify Gender" required><br>
+
+    <button type="submit">Add Gym</button>
+  </form>
+
+  <div id="outputOnDOM"></div>
 
   <ul id="mainUl"> </ul>
 
@@ -44,11 +67,8 @@
       <label for="message"></label><br>
       <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br />
       <button class="clear-button" onclick="clearField('message')">Clear</button><br>
-
       <input type="submit" value="Submit">
-
     </form>
-
     <div class="copyright">
       <p>&copy; 2024 Equinox Fitness . All Rights Reserved.</p>
     </div>
