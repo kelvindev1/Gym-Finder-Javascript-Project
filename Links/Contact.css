@@ -33,22 +33,28 @@ body {
     background-color: green;
 }
 
+.contact-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+}
 
-
-
-
+.contact-info,
+.time,
+#contactForm {
+    flex-basis: 30%;
+}
 
 #contactForm label {
-    display: inline-block;
-    text-align: right;
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 #contactForm input[type="text"],
 #contactForm input[type="email"],
 #contactForm textarea {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -68,22 +74,7 @@ body {
     background-color: red;
 }
 
-.clear-button {
-    position: relative;
-    top: -24px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #030303;
-    background-color: green;
-    border: none;
-    color: white;
-    padding: 8px 18px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.clear-button:hover {
-    background-color: #720e01;
+.contact-footer {
+    text-align: center;
+    margin-top: 350px;
 }

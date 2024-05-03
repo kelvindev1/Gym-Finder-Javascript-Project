@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Contact.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Contact.css" />
     <title>Equinox contact</title>
 </head>
 
@@ -19,22 +19,40 @@
             </li>
         </ul>
     </nav>
-    <h4>Contact Us</h4>
-    <form id="contactForm">
-        <label for="name"></label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+    <div class="contact-cont">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Get in touch for more information or to schedule a visit with a
+                fitness professional - we can’t wait to show you around.</p>
+        </div>
 
-        <label for="subject"></label><br>
-        <input type="text" id="subject" name="subject" placeholder="Topic of your message" required>
+        <form id="contactForm">
+            <label for="name"></label><br />
+            <input type="text" id="name" name="name" placeholder="Enter your name here" required />
 
-        <label for="message"></label><br>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br />
+            <label for="subject"></label><br />
+            <input type="text" id="subject" name="subject" placeholder="Topic of your message" required />
 
-        <input type="submit" value="Send">
+            <label for="message"></label><br />
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br />
 
-    </form>
+            <input type="submit" value="Submit" />
+        </form>
+        <div class="time">
+            <h4>Operating Hours</h4>
+            <p>05:00 - 22:00 <span>Monday - Friday</span></p>
+            <p>07:00 - 19:00 <span>Saturday & Sunday</span></p>
+            <p>07:00 - 19:00 <span>Public Holidays</span></p>
+        </div>
+    </div>
 
+    <footer class="contact-footer">
+        <p>&copy; 2024 Equinox Fitness . All Rights Reserved.</p>
+    </footer>
 </body>
+<footer>
+
+</footer>
 <script src="../index.js"></script>
 
 </html>

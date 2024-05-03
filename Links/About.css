@@ -8,7 +8,7 @@ body {
 
 .nav-header {
     background-color: #333;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .nav-header .links {
@@ -31,4 +31,21 @@ body {
 
 .nav-header .links li a:hover {
     background-color: green;
+}
+
+.About-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.one,
+.two,
+.three {
+    flex-basis: 33%;
+}
+
+.about-footer {
+    text-align: center;
 }
