@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header>
 
+  <header>
     <nav class="nav-header">
       <ul class="links">
         <li>
@@ -27,32 +27,32 @@
     </div>
   </header>
 
-  <h3>Add a New Gym</h3>
+  <ul id="mainUl"></ul>
+
+  <h4>Fill the form to Add a New Gym</h4>
   <form id="gymForm">
-    <label for="name">Name:</label>
+    <label for="name"></label>
     <input type="text" id="name" placeholder="Enter Gym Name"><br>
 
-    <label for="location">Location:</label>
+    <label for="location"></label>
     <input type="text" id="location" placeholder="Enter Gym Location" required><br>
 
-    <label for="description">Description:</label>
+    <label for="description"></label>
     <input type="text" id="description" placeholder="Brief Description" required><br>
 
-    <label for="price">Price:</label>
+    <label for="price"></label>
     <input type="number" id="price" placeholder=" @ Kshs" required><br>
 
-    <label for="image">Image URL:</label>
+    <label for="image"></label>
     <input type="url" id="image" placeholder="Enter the image URl" required><br>
 
-    <label for="category">Gender:</label>
+    <label for="category"></label>
     <input type="text" id="category" placeholder="Specify Gender" required><br>
 
     <button type="submit">Add Gym</button>
   </form>
 
   <div id="outputOnDOM"></div>
-
-  <ul id="mainUl"> </ul>
 
   <footer>
 
@@ -69,6 +69,7 @@
       <button class="clear-button" onclick="clearField('message')">Clear</button><br>
       <input type="submit" value="Submit">
     </form>
+
     <div class="copyright">
       <p>&copy; 2024 Equinox Fitness . All Rights Reserved.</p>
     </div>
