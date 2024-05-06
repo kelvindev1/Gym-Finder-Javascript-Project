@@ -1,6 +1,40 @@
 const mainUl = document.getElementById("mainUl");
 
+const favoritesContainer = document.getElementById("favorites-container");
 let favorites = [];
+
+function updateFavoritesContainer() {
+  localStorage.setItem("favorites", JSON.stringify(favorites));
+  favoritesContainer.innerHTML = "";
+  const favoritesList = document.createElement("ol");
+  favorites.forEach((option, index) => {
+    const favoriteElement = document.createElement("li");
+    favoriteElement.textContent = option.name;
+
+    // Create a delete button for each favorite element
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.className = "btn btn-danger";
+
+    deleteButton.addEventListener("click", () => {
+      // Remove the favorite item from the favorites array
+      favorites.splice(index, 1);
+      updateFavoritesContainer();
+    });
+
+    favoriteElement.appendChild(deleteButton);
+    favoritesList.appendChild(favoriteElement);
+  });
+  favoritesContainer.appendChild(favoritesList);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedFavorites = JSON.parse(localStorage.getItem("favorites"));
+  if (savedFavorites) {
+    favorites = savedFavorites;
+    updateFavoritesContainer();
+  }
+});
 
 fetch("http://localhost:3000/options")
   .then((Response) => Response.json())
@@ -81,6 +115,7 @@ fetch("http://localhost:3000/options")
       addToFavoritesButton.addEventListener("click", () => {
         favorites.push(option);
         alert(`"${option.name}" was added to favorites.`);
+        updateFavoritesContainer();
       });
 
       mainDiv.appendChild(nameHeading);
