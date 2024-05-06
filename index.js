@@ -2,10 +2,6 @@ const mainUl = document.getElementById("mainUl");
 
 let favorites = [];
 
-// const favoritesOl = document.createElement("ol");
-// favoritesOl.id = "favoritesOl";
-// document.body.appendChild(favoritesOl);
-
 fetch("http://localhost:3000/options")
   .then((Response) => Response.json())
   .then((data) => {
@@ -42,6 +38,7 @@ fetch("http://localhost:3000/options")
 
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
+      deleteButton.className = "btn btn-danger";
 
       deleteButton.dataset.itemId = option.id;
 
@@ -51,12 +48,15 @@ fetch("http://localhost:3000/options")
           const itemId = deleteButton.dataset.itemId;
 
           // Make the DELETE request to the server with the item ID
-          const response = await fetch(`http://localhost:3000/options/${itemId}`, {
-            method: "DELETE",
-            headers: {
-              "Content-Type": "application/json"
+          const response = await fetch(
+            `http://localhost:3000/options/${itemId}`,
+            {
+              method: "DELETE",
+              headers: {
+                "Content-Type": "application/json",
+              },
             }
-          });
+          );
 
           if (response.ok) {
             // If the request was successful, remove the corresponding li element from the DOM
@@ -76,6 +76,7 @@ fetch("http://localhost:3000/options")
 
       const addToFavoritesButton = document.createElement("button");
       addToFavoritesButton.textContent = "Add to Favorites";
+      addToFavoritesButton.className = "btn btn-danger";
 
       addToFavoritesButton.addEventListener("click", () => {
         favorites.push(option);
@@ -94,17 +95,6 @@ fetch("http://localhost:3000/options")
       li.appendChild(mainDiv);
 
       mainUl.appendChild(li);
-
-      // const favoriteLi = document.createElement("li");
-      // const favoriteMainDiv = document.createElement("div");
-      // const favoriteNameHeading = document.createElement("h3");
-      // favoriteNameHeading.textContent = `Name: ${option.name}`;
-
-      // favoriteMainDiv.appendChild(favoriteNameHeading);
-
-      // favoriteLi.appendChild(favoriteMainDiv);
-
-      // favoritesOl.appendChild(favoriteLi);
     });
   })
   .catch((error) => {

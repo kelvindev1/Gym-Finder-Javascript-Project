@@ -1,3 +1,8 @@
+#mybody {
+    background-color: beige;
+    color: #333;
+}
+
 .nav-header {
     background-color: #333;
     overflow: hidden;
@@ -32,6 +37,25 @@
     color: #000000;
     text-decoration: underline;
 }
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
+}
+
 
 #gymForm {
     max-width: 350px;
